@@ -1,0 +1,26 @@
+:root{
+    --color-dark: #000;
+    --primary-color: rgba(255, 145, 10, .5);
+    --color-grey: #ededed;
+    --color-white: #fff;
+}
+
+ul{
+    list-style: none;
+}
+a:link, a:visited{
+    text-decoration: none;
+}
+
+.d-flex{
+    display: flex;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-item-center{
+    align-items: center;
+}
