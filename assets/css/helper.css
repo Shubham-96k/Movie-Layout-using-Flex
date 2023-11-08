@@ -1,6 +1,8 @@
 :root{
     --color-dark: #000;
-    --primary-color: rgba(255, 145, 10, .5);
+    --primary-light: rgba(255, 145, 10, 0.4);
+    --primary-dark: #ff910a;
+    --primary-light-dark: rgba(255, 145, 10, .5);
     --color-grey: #ededed;
     --color-white: #fff;
 }
