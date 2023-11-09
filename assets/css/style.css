@@ -131,7 +131,6 @@ body{
 .watchcaption{
     padding: 20px;
     color: var(--color-white);
-    flex-grow: 1;
 }
 .watchcaption h3{
     font-size: 4rem;
@@ -187,6 +186,8 @@ body{
     }
     .watchcaption{
         align-self: center;
+        flex-grow: 1;
+        padding: 40px;
     }
     .watchimg{
         flex : 0 0 500px;
