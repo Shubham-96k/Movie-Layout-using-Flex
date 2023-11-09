@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Bitter', serif;
-    background-color: var(--color-grey);
+    background-color: var(--color-dark);
     line-height: 1.5;
 }
 
@@ -81,8 +81,7 @@ body{
     display: inline-block;
 }
 .figure {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, 
-                rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: #fff 2px 2px 12px, rgba(0, 0, 0, 0.42) 0px 10px 10px;
     cursor: pointer;
     height: 100%;
     background-color: var(--color-white);
@@ -104,6 +103,49 @@ body{
 .figcaption p{
     padding: 25px;
     color: var(--color-dark);
+}
+
+/* ######### CSS for watch now section ######## */
+
+.watch-now h2{
+    font-size : 3.125rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 10px 30px 30px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+.watchfigure{
+    background-color: var(--color-dark);
+    margin-bottom: 20px;
+    box-shadow: #fff 2px 2px 12px, rgba(0, 0, 0, 0.42) 0px 10px 10px
+}
+.watchimg{
+    height: 650px;
+}
+.watchfigure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.watchcaption{
+    padding: 20px;
+    color: var(--color-white);
+    flex-grow: 1;
+}
+.watchcaption h3{
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.watchcaption span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.watchcaption a{
+    color: var(--color-white);
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 @media all and (min-width: 768px){
@@ -140,5 +182,16 @@ body{
     .post:nth-child(6){
         flex: 0 0 100%;
     }
-    
+    .watchfigure{
+        display: flex;
+    }
+    .watchcaption{
+        align-self: center;
+    }
+    .watchimg{
+        flex : 0 0 500px;
+    }
+   .watchfigure:nth-of-type(2) .watchimg{
+     order: 1;
+   }
 }
