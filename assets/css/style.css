@@ -71,7 +71,7 @@ body{
 
 /* ####### CSS FOR POST SECTION ######## */
 .main-content{
-     padding: 15px;
+     padding: 15px 15px 0px;
 }
 .post{
     margin-bottom: 20px;
@@ -205,20 +205,28 @@ body{
 
 /* ################# css for sidebar section ############## */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.sidebar{
+    padding: 0px 15px 15px;
+} 
+.side-cards{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-transform: capitalize;
+    box-shadow: #fff 2px 2px 12px, rgba(0, 0, 0, 0.42) 0px 10px 10px;
+}
+.side-cards h3{
+    font-size: 22px;
+}
+.side-cards ul{
+    padding: 20px;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-weight: bold;
+}
+.side-cards a{
+    color: var(--color-dark);
+}
 
 /* ############# css for footer section ############# */
 
@@ -229,6 +237,17 @@ body{
     color: var(--color-dark);
     padding: 20px;
     font-weight: 800;
+}
+
+@media all and (min-width: 469px){
+    .side-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .side-cards{
+        flex-basis: 49%;
+    }
 }
 
 @media all and (min-width: 768px){
@@ -287,10 +306,6 @@ body{
     .main-content {
         flex: 1 0 0;
     }
-    .sidebar{
-        flex : 0 0 400px;
-        border: 2px solid green;
-    }
     .post:nth-child(3),.post:nth-child(4),.post:nth-child(5){
         flex: 0 0 32%;
     }
@@ -314,4 +329,16 @@ body{
    .gallery-img{
      height: 500px;
     }
+    .side-info {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .sidebar{
+        flex : 0 0 400px;
+        padding: 15px;
+    }
+    .side-cards{
+        flex-basis: 100%;
+    }
+    
 }
