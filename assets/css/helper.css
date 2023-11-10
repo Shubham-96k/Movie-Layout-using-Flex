@@ -17,6 +17,9 @@ a:link, a:visited{
 .d-flex{
     display: flex;
 }
+.f-wrap-wrap{
+    flex-wrap: wrap;
+}
 .flex-direction-column{
     flex-direction: column;
 }
@@ -25,4 +28,7 @@ a:link, a:visited{
 }
 .align-item-center{
     align-items: center;
+}
+.mb-20{
+    margin-bottom: 20px;
 }

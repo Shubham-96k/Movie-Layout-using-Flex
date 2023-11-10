@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/helper.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Flex Movie Layout </title>
@@ -111,7 +113,7 @@
                     </article>
                 </section>
                 <section class="watch-now">
-                    <h2>watch today</h2>
+                    <h2 class="heading">watch today</h2>
                     <figure class="watchfigure">
                         <div class="watchimg">
                             <img src="./assets/images/img_8.jpg" alt="movie-home">
@@ -144,11 +146,49 @@
                     </figure>
                 </section>
                 <section class="download">
-                    download
+                        <h2 class="heading">download now</h2>
+                        <img src="./assets/images/img_11.png" alt="movie-home">
+                        <div class="download-content">
+                            <div class="downloadimg">
+                                <a href="javascript:;">
+                                    download
+                                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                                </a>
+                            </div>
+                            <div class="downloadgenre">
+                                <div class="genre d-flex f-wrap-wrap mb-20">
+                                    <h4>genre : </h4>&nbsp;&nbsp;
+                                    <p>adventure,</p>&nbsp;&nbsp;
+                                    <p>action,</p>&nbsp;&nbsp;
+                                    <p>horror,</p>&nbsp;&nbsp;
+                                    <p>romance.</p>
+                                </div>
+                                <div class="cast d-flex f-wrap-wrap">
+                                    <h4>cast : </h4>
+                                    <img src="./assets/images/img_11.jpg" alt="star-cast" title="actor">
+                                    <img src="./assets/images/img_12.jpg" alt="star-cast" title="actor">
+                                    <img src="./assets/images/img_13.jpg" alt="star-cast" title="actor">
+                                    <img src="./assets/images/img_14.jpg" alt="star-cast" title="actor">
+                                    <img src="./assets/images/img_15.jpg" alt="star-cast" title="actor">
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <p>8</p>
+                                <p>(1400) rating</p>
+                                <p>(6 seasons)</p>
+                            </div>
+                        </div>
                 </section>
-                <section class="gallery">
-                    gallary
-                </section>
+                <!-- <section class="gallery">
+                    <h2 class="heading">gallery</h2>
+                    <div class="gallery-imgs">
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_1.jpg" data-lightbox="roadtrip">
+                                <img src="./assets/images/gallery_1.jpg" alt="gallery-img">
+                            </a>
+                        </div>
+                    </div>
+                </section> -->
             </main>
             <aside class="sidebar">
                 side bar comes here
@@ -157,5 +197,7 @@
     </section>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

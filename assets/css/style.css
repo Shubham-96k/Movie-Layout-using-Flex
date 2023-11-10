@@ -107,7 +107,7 @@ body{
 
 /* ######### CSS for watch now section ######## */
 
-.watch-now h2{
+.heading{
     font-size : 3.125rem;
     text-transform: capitalize;
     text-align: center;
@@ -147,6 +147,50 @@ body{
     font-weight: bold;
 }
 
+/* ############## css for download section ################## */
+
+.download>img{
+    width: 100%;
+}
+.downloadimg{
+    text-align: center;
+}
+.downloadimg a {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 10px;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    font-weight: bold;
+    cursor: pointer;
+}
+.downloadgenre{
+    padding: 20px;
+    background-color: var(--color-white);
+}
+.genre h4, .cast h4{
+    text-transform: capitalize;
+    width: 52px;
+    font-weight: bold;
+    align-self: center;
+}
+.rating{
+    background-color: var(--primary-dark);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.cast img{
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* ############### css for gallery section ############### */
+
+
+
 @media all and (min-width: 768px){
     .post{
         flex: 0 0 49%;
@@ -155,6 +199,20 @@ body{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+    .download-content{
+        display: flex;
+    }
+    .downloadimg{
+        align-self: center;
+    }
+    .downloadimg a {
+        padding: 45px;
+        background-color: var(--primary-dark);
+        color: var(--color-dark);
+    }
+    .downloadgenre {
+        flex: 1 0 0;
     }
 }
 
