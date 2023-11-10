@@ -33,18 +33,19 @@ body{
 }
 .info{
     flex-grow: 1;
-    color: var(--color-white)
 }
 .info h1{
     text-transform: uppercase;
     font-size: 2.625rem;
     cursor: pointer;
 }
+.info h1 a{
+    color: var(--color-white)
+}
 .info p{
     font-style: italic;
     color: var(--primary-dark);
 }
-
 
 .navbar{
     background-color: var(--primary-light);
@@ -189,7 +190,46 @@ body{
 
 /* ############### css for gallery section ############### */
 
+.gallery-img{
+    margin-bottom: 20px;
+    height: 350px;
+}
+.gallery-img a {
+    height: 100%;
+}
+.gallery-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+/* ################# css for sidebar section ############## */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############# css for footer section ############# */
+
+.footer {
+    text-align: center;
+    text-transform: capitalize;
+    background-color: var(--primary-dark);
+    color: var(--color-dark);
+    padding: 20px;
+    font-weight: 800;
+}
 
 @media all and (min-width: 768px){
     .post{
@@ -214,6 +254,24 @@ body{
     .downloadgenre {
         flex: 1 0 0;
     }
+    .gallery-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+    }
+    .gallery-imgs :nth-child(3n + 1){
+        flex-basis: 30%;
+    }
+    .gallery-imgs :nth-child(3n + 2){
+        flex-basis: 500px;
+    }
+    .gallery-imgs :nth-child(3n + 3){
+        flex-basis: 250px;
+    }
+    .gallery-img{
+        flex-grow: 1;
+        margin-left: 10px;
+    }
 }
 
 @media all and (min-width: 1180px){
@@ -226,7 +284,7 @@ body{
     .content-area{
         display: flex;
     }
-    .main-content{
+    .main-content {
         flex: 1 0 0;
     }
     .sidebar{
@@ -253,4 +311,7 @@ body{
    .watchfigure:nth-of-type(2) .watchimg{
      order: 1;
    }
+   .gallery-img{
+     height: 500px;
+    }
 }
